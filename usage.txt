@@ -1,0 +1,8 @@
+myapp <command> <option>
+
+Usage:
+
+myapp --help        displays help
+myapp init          initialize the app
+myapp config        create or chnage the app configuration
+myapp token         manage the user tokens
