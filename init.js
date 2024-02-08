@@ -43,12 +43,12 @@ function createFiles() {
         console.log('config file already exists.');
       }
       let tokendata = JSON.stringify(tokenjson, null, 2);
-      if(!fs.existsSync(path.join(__dirname, './json/token.json'))) {
-        fs.writeFile('./json/token.json', tokendata, (err) => {
+      if(!fs.existsSync(path.join(__dirname, './json/tokens.json'))) {
+        fs.writeFile('./json/tokens.json', tokendata, (err) => {
           if(err) {
             console.log(err)
           } else {
-            console.log('Data written to token file.');
+            console.log('Data written to tokens file.');
           }
         }
         );
